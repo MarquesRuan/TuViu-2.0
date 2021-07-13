@@ -1,4 +1,4 @@
-const apiUrl = 'https://api.themoviedb.org/3/discover/movie?api_key=d8bd8966fb7f422b377e6533dee0cae2&query=Jack+Reacher';
+const apiUrl = 'https://api.themoviedb.org/3/discover/movie/497698?api_key=d8bd8966fb7f422b377e6533dee0cae2';
 const IMGPATH = "https://image.tmdb.org/t/p/w1280";
 const SEARCHAPI ="https://api.themoviedb.org/3/search/movie?&api_key=d8bd8966fb7f422b377e6533dee0cae2&query=";
 

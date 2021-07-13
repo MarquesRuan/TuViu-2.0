@@ -1,10 +1,9 @@
 //TMDB 
 const API_KEY = 'api_key=d8bd8966fb7f422b377e6533dee0cae2';
 const BASE_URL = 'https://api.themoviedb.org/3';
-const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&'+API_KEY;
+const API_URL = BASE_URL + '/discover/movie?sort_by=popularity.desc&'+API_KEY+'&language=pt-BR';
 const IMG_URL = 'https://image.tmdb.org/t/p/w500';
 const searchURL = BASE_URL + '/search/movie?'+API_KEY;
-
 const genres = [
   ]
 
@@ -12,6 +11,7 @@ const main = document.getElementById('main');
 const form =  document.getElementById('form');
 const search = document.getElementById('search');
 const tagsEl = document.getElementById('tags');
+const fav = document.getElementById("https://api.themoviedb.org/3/search/movie?api_key=api_key=d8bd8966fb7f422b377e6533dee0cae2&query=Jack+Reacher")
 
 const prev = document.getElementById('prev')
 const next = document.getElementById('next')

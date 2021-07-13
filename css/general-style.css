@@ -1,0 +1,746 @@
+@charset "utf-8";
+/* CSS Document */
+:root {
+	--primary: #333333;
+	--primary-hover: #666666;
+	--primary-outline-hover: #CCCCCC;
+	--secondary: #FFDA1F;
+	--secondary-hover: #FFE666;
+	--secondary-outline-hover: #FFEE99;
+	--font-family-sans-serif: "Noto Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+/* bootstrap components */
+body {
+	font-family: var(--font-family-sans-serif);
+	color: var(--primary);
+
+}
+
+p{
+	color: black;
+}
+
+.loading {
+	display: flex;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	color: #FFDA1F;
+	z-index: 100;
+	align-items: center;
+	text-align: center;
+}
+
+.loading i {
+	margin: auto;
+	font-size: 6rem;
+}
+
+.btn {
+	padding: 1rem 3rem;
+	font-size: 1rem;
+	line-height: 1rem;
+	border-radius: 15px;
+}
+
+.h1, h1 {
+    font-size: 3rem;
+	color: var(--secondary);
+}
+
+.h2, h2 {
+	font-size: 2.25rem;
+}
+
+.h6, h6 {
+	font-size: 1.125rem;
+	color: var(--secondary);
+
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 400;
+}
+
+a {
+	color: var(--secondary);
+}
+
+a:hover {
+	color: var(--primary-hover);
+}
+#custom-search-input {
+	margin:0;
+	margin-top: 10px;
+	padding: 0;
+}
+
+#custom-search-input .search-query {
+	margin-bottom: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 15px;
+}
+
+#custom-search-input button {
+	border: 0;
+	background: none;
+	position: relative;
+	left: -400px;
+	margin-bottom: 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 20px;
+	color:var(--secondary);
+}
+
+
+.search-query:focus + button {
+	z-index: 3;
+}
+
+ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; /* center nav items inside nav container */
+    width: 75%;         /* to prevent overflow of nav items for demo */
+}
+
+.profile-header {
+	background:var(--primary) ;
+	text-align: center;
+	color:var(--secondary);
+	padding: 30px;
+  }
+  .profile-header img {
+	height:150px;
+	width:150px;
+  }
+  .profile-details {
+	padding:20px 20px 30px;
+  }
+
+
+.movie-card {
+	background: var(--primary);
+	box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+	width: 50%;
+	max-width: 160px;
+	margin: 2em;
+	border-radius: 10px;
+	display: inline-block;
+  }
+
+
+  .movie-header {
+	padding: 0;
+	margin: 0;
+	height: 200px;
+	width: 100%;
+	display: block;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+  }
+
+  .manOfSteel {
+	background: url("http://henrycavill.org/images/Films/2013-Man-of-Steel/posters/3-Walmart-Superman-a.jpg");
+	background-repeat: no-repeat;
+	background-size: 160px 200px;
+  }
+
+  .theDarkTower {
+	background: url("http://cdn.collider.com/wp-content/uploads/2017/03/the-dark-tower-poster.jpg");
+	background-repeat: no-repeat;
+	background-size: 160px 200px;
+  }
+  .exorcista {
+	background: url("https://br.web.img2.acsta.net/pictures/18/06/06/19/11/3472306.jpg");
+	background-repeat: no-repeat;
+	background-size: 160px 200px;
+  }
+  .vingadores {
+	background: url("https://br.web.img2.acsta.net/pictures/18/03/16/15/08/2019826.jpg");
+	background-repeat: no-repeat;
+	background-size: 160px 200px;
+  }
+
+  .sexta {
+	background: url("https://static.wikia.nocookie.net/dublagempedia/images/8/84/135848.jpg/revision/latest?cb=20200420203217&path-prefix=pt-br");
+	background-repeat: no-repeat;
+	background-size: 160px 200px;
+  }
+  .halloweenkills {
+	background: url("https://m.media-amazon.com/images/M/MV5BNzZhY2Q4OTAtZDdlMi00OTljLWFlNjItMmViY2ZmZWRkZjdiXkEyXkFqcGdeQXVyNjIzNzM4NzA@._V1_.jpg");
+	background-repeat: no-repeat;
+	background-size: 160px 200px;
+  }
+  .scarymovie {
+	background: url("https://flxt.tmsimg.com/assets/p25765_v_v8_ag.jpg");
+	background-repeat: no-repeat;
+	background-size: 160px 200px;
+  }
+
+  .barbie {
+	background: url("https://upload.wikimedia.org/wikipedia/pt/d/d7/Barbie_Rapunzel.jpg");
+	background-repeat: no-repeat;
+	background-size: 160px 200px;
+  }
+  .esquadrao {
+	background: url("https://upload.wikimedia.org/wikipedia/pt/thumb/2/2c/Suicide_Squad.jpg/230px-Suicide_Squad.jpg");
+	background-repeat: no-repeat;
+	background-size: 160px 200px;
+  }
+  .aves{
+	background: url("https://br.web.img2.acsta.net/c_310_420/pictures/19/09/17/19/29/5316438.jpg");
+	background-repeat: no-repeat;
+	background-size: 160px 200px;
+  }
+
+  .retorno{
+	background: url("https://upload.wikimedia.org/wikipedia/pt/thumb/8/83/Batman_returns_poster2.jpg/225px-Batman_returns_poster2.jpg");
+	background-repeat: no-repeat;
+	background-size: 160px 200px;
+  }
+
+  .header-icon-container {
+	position: relative;
+  }
+
+
+  .header-icon:hover {
+	background: rgba(0, 0, 0, 0.15);
+	font-size: 74px;
+	text-shadow: 0px 0px 20px #6abcea, 0px 5px 30px #6ABCEA;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	opacity: 1;
+  }
+
+  .movie-card:hover {
+	-webkit-transform: scale(1.03);
+			transform: scale(1.03);
+	box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+  }
+
+  .movie-content {
+	padding: 16px 16px 10px 5px;
+	margin: 0;
+  }
+
+  .movie-content-header, .movie-info {
+	display: table;
+	width: 100%;
+  }
+
+  .movie-title {
+	font-size: 25px;
+	margin: 0;
+	display: table-cell;
+  }
+
+  .imax-logo {
+	width: 50px;
+	height: 15px;
+	background: url("https://6a25bbd04bd33b8a843e-9626a8b6c7858057941524bfdad5f5b0.ssl.cf5.rackcdn.com/media_kit/3e27ede823afbf139c57f1c78a03c870.jpg") no-repeat;
+	background-size: contain;
+	display: table-cell;
+	float: right;
+	position: relative;
+	margin-top: 5px;
+  }
+
+  .movie-info {
+	margin-top: 1em;
+  }
+
+
+
+.navbar-brand {
+	font-size: 2.5rem;
+	font-weight: 400;
+	line-height: 3.375rem;
+	text-align: center;
+}
+
+.navbar-brand small{
+	font-size: 1rem;
+	line-height: 1.375rem;
+	display: block;
+	padding-top: .5rem;
+}
+
+.btn-warning{
+	border-radius: 25px;
+	padding: 10px 30px;
+	margin-top: 5px;
+	font-size: 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+.btn-success{
+	border-radius: 25px;
+	padding: 10px 30px;
+	margin-top: 5px;
+	font-size: 15px;
+	text-align: center;
+	vertical-align: middle;
+}
+.fa-star{
+	color: var(--primary);
+}
+.fa-plus{
+	color: var(--primary);
+}
+.fa-window-minimize{
+	color: var(--primary);
+
+}
+
+
+.btn-primary {
+	background-color: var(--secondary);
+	border-color: var(--secondary);
+}
+
+.btn-primary:hover {
+	background-color: var(--primary-hover);
+	border-color: var(--primary-hover);
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: white;
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    box-shadow: 0 0 0 .2rem var(--primary-outline-hover);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem var(--primary-outline-hover);
+}
+
+.btn-outline-primary {
+	border-color: var(--primary);
+	color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+	background-color: var(--primary-outline-hover);
+	border-color: var(--primary-hover);
+	color: var(--primary-hover);
+}
+
+.btn-outline-primary.focus, .btn-outline-primary:focus {
+    color: white;
+    background-color: var(--primary-outline-hover);
+    border-color: var(--primary-hover);
+    box-shadow: 0 0 0 .2rem var(--primary);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show > .btn-outline-primary.dropdown-toggle {
+    color: #fff;
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.btn-outline-primary:not(:disabled):not(.disabled).active:focus, .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem var(--primary-hover);
+}
+
+.btn-secondary {
+	background-color: var(--secondary);
+	border-color: var(--secondary);
+	color: var(--primary);
+}
+
+.btn-secondary:hover {
+	background-color: var(--secondary-hover);
+	border-color: var(--secondary-hover);
+	color: var(--primary);
+}
+
+.btn-secondary.focus, .btn-secondary:focus {
+    color: var(--primary);
+    background-color: var(--secondary-hover);
+    border-color: var(--secondary-hover);
+    box-shadow: 0 0 0 .2rem var(--secondary-outline-hover);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: var(--secondary-hover);
+    border-color: var(--secondary-hover);
+}
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem var(--secondary-outline-hover);
+}
+
+
+.card-body {
+	background-image: url('https://sm.ign.com/ign_br/review/j/joker-revi/joker-review_fpk2.jpg');
+    background-repeat: no-repeat;
+    background-size:120%;
+}
+
+.filme2 {
+	background-image: url('https://img.r7.com/images/oscar-2021-soul-animacao-25042021222659769?dimensions=771x420');
+    background-repeat: no-repeat;
+    background-size:120%;
+}
+
+.filme3{
+	background-image: url('https://media.glamour.com/photos/5ec2e91dccfbc8c1a8fe8cbf/master/w_3000,h_2032,c_limit/MSDTITA_FE057.jpg');
+    background-repeat: no-repeat;
+    background-size:120%;
+}
+
+.card-title {
+	margin-bottom: 3.5rem;
+	font-weight: 1000;
+	color: var(--secondary);
+}
+
+.card-text {
+	font-size: 1.25rem;
+}
+
+.card-text:last-child {
+	margin-bottom: 2rem;
+}
+
+.btn object {
+	pointer-events: none;
+}
+
+/* Forms */
+.form-control {
+    height: calc(1rem + 2rem + 2px);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: var(--secondary);
+    background-color:#333333;
+    background-clip: padding-box;
+    border: 1px solid #FFDA1F;
+	border-radius: 25px;
+}
+
+.form-control:not(select) {
+	padding: 1rem;
+}
+
+.form-control::placeholder {
+    color: #fff;
+}
+
+.form-control:focus {
+    color: var(--secondary);
+    background-color: #333333;
+    border-color: var(--primary-hover);
+    outline: 0;
+    box-shadow: 0 0 0 .2rem var(--secondary-hover);
+}
+
+.custom-control-label::before {
+	border: 2px solid var(--secondary);
+	background-color: transparent;
+	width: 1.25rem;
+	height: 1.25rem;
+	top: .15rem;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+	color: #fff;
+	border: .4rem solid var(--secondary);
+	background-color: transparent;
+}
+
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
+	background-color: var(--secondary);
+}
+
+.custom-control-label::after {
+	top: .15rem;
+	left: -1.5rem;
+	width: 1.25rem;
+	height: 1.25rem;
+}
+
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+    background-image: none;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 .2rem var(--primary-outline-hover);
+}
+
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before {
+    border-color: var(--primary-hover);
+}
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    color: #fff;
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+/* new components */
+footer {
+	background: #C4C4C4;
+	height: 481px;
+	display: block;
+	position: relative;
+	padding: 1rem;
+}
+
+.footer-title {
+	display: block;
+	margin-top: 194px;
+	text-align: center;
+	line-height: 2rem;
+}
+
+
+.footer-title::after {
+	content: ' ';
+	display: block;
+	border-bottom: 1px solid black;
+	width: 60px;
+	font-weight: 400;
+	text-align: center;
+	margin: .5rem auto;
+}
+
+.footer-info {
+	display: block;
+	text-align: center;
+}
+
+.footer-fale-conosco {
+	display: inline;
+	font-size: 1.25rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 1.75rem;
+	text-align: left;
+}
+
+.footer-fone {
+	display: inline;
+	font-weight: 400;
+	line-height: 1.375rem;
+	text-align: left;
+	margin-left: 1.5rem;
+}
+
+.featured-panel {
+	padding-left: 7rem;
+	position: relative;
+	min-height: 35.5rem;
+}
+
+.featured-panel-content {
+	padding: 3rem 3rem 8rem 16rem;
+	background: var(--primary);
+}
+
+.featured-panel-image {
+	width: 20rem;
+	height: 32.5rem;
+	background: var(--primary);
+	position: absolute;
+	padding: .25rem;
+	top: 3rem;
+	left: 0;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.featured-panel-image img {
+	width: 100%;
+}
+
+.section-title::before {
+	content: ' ';
+	width: 13rem;
+	border-bottom: 1px solid #000000;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0px 2.5rem;
+}
+
+.section-title {
+	font-size: 2.25rem;
+	font-family: "Taviraj";
+	line-height: 2.5rem;
+	font-weight: 500;
+	margin: 3rem 0px;
+}
+
+.accessible-actions {
+	background-color: white;
+	color: black;
+	padding: 1rem;
+}
+
+.accessible-actions .btn-dark {
+	background-color: black;
+	border-color: black;
+	color: white;
+	padding: 0px;
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 1.5rem;
+	margin-left: .5rem;
+}
+
+.select{
+	color: var(--secondary);
+}
+.accessible-actions .btn-dark:hover {
+	box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.slide-down {
+	display: flex;
+	flex-direction: column;
+	-ms-flex-align: center !important;
+	align-items: center !important;
+
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 33px;
+	letter-spacing: 0.03em;
+	text-align: center;
+}
+
+.slide-down .btn {
+	padding: 0.875rem;
+	margin-top: 1.5rem;
+}
+
+.slide-down .btn object {
+	width: 2rem;
+	height: 2rem;
+}
+
+.slide-down .btn.btn-primary:hover {
+	/* box-shadow: 0 0 0 1px white, 0 0 0 2px var(--primary); */
+}
+
+.slide-up {
+	display: flex;
+	flex-direction: column;
+	-ms-flex-align: center !important;
+	align-items: center !important;
+
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 33px;
+	letter-spacing: 0.03em;
+	text-align: center;
+}
+
+.slide-up .btn {
+	padding: 0.875rem;
+	margin-top: 1.5rem;
+}
+
+.slide-up .btn object {
+	width: 2rem;
+	height: 2rem;
+}
+
+.slide-up .btn.btn-primary:hover {
+	/* box-shadow: 0 0 0 1px white, 0 0 0 2px var(--primary); */
+}
+
+.feed-alert {
+	background: #FFFFFF;
+	border: 2px solid var(--primary);
+	color: var(--primary);
+	padding: 1.25rem;
+	font-size: 2rem;
+	text-align: center;
+}
+
+.modal {
+	display: flex;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+	z-index: 90;
+}
+
+.modal-panel {
+	padding: 2rem;
+	background-color: #C4C4C4;
+	margin: auto;
+	width: 500px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	font-size: 1.5rem;
+}
+
+.modal-panel.modal-tuto {
+	position: absolute;
+	padding: 1rem;
+	font-size: 1.125rem;
+	z-index: 91;
+}
+
+.modal-tuto .touch-app {
+	position: absolute;
+	right: -5rem;
+	bottom: -5rem;
+}
+
+.fs-0 {
+	font-size: .5rem;
+}
+
+.fs-1 {
+	font-size: 1rem;
+}
+
+.fs-2 {
+	font-size: 1.5rem;
+}
+
+.fs-3 {
+	font-size: 2rem;
+}
+
+.fs-4 {
+	font-size: 2.5rem;
+}
+
+.fs-5 {
+	font-size: 3rem;
+}
+
+.mx--3 {
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+
+.my--3 {
+	margin-top: -1rem;
+	margin-bottom: -1rem;
+}

@@ -108,12 +108,11 @@
                     </div>
                 </a>
                 </div>
-                <br><br>
-                <fieldset><div id="lsOutput"></div></fieldset>
-                
-
-             
+               
             </div>
+            <br><br> <br><br>
+            <div id="lsOutput"></div>
+
     </main>
     <footer style="background-color:#333333;">
     </footer>
@@ -145,12 +144,17 @@
       const key = inpKey.value;
       const value = inpValue.value;
       console.log(key, value);
+      localStorage.setItem(key, value)
+      localStorage.setItem(key, value)
+      
     }
         for(i = 0 ; i < localStorage.length ; i++){
             const key = localStorage.key(i);
             const value = localStorage.getItem(key);
-            lsOutput.innerHTML += '${key} : ${value}';
+            lsOutput.innerHTML += key && `${key} : ${value}<br />`;
         }
+        //localStorage.clear()
+
         </script>
 </body>
 

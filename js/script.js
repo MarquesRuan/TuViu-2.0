@@ -157,6 +157,10 @@ function showMovies(data) {
 
 const overlayContent = document.getElementById('overlay-content');
 /* Open when someone clicks on the span element */
+function teste(){
+  window.location="minhasplaylists.html"
+}
+
 function openNav(movie) {
   let id = movie.id;
   fetch(BASE_URL + '/movie/'+id+'/videos?'+API_KEY).then(res => res.json()).then(SinopseFilme => {
@@ -167,6 +171,7 @@ function openNav(movie) {
         var embed = [];
         var dots = [];
         
+       
         var content = `
         <h1 class="no-results"> Sinopse </h1>
         <h2 class="no-results">${movie.overview}</h2>
@@ -174,7 +179,8 @@ function openNav(movie) {
         ${embed.join('')}
         <br/>
         <div class="dots">${dots.join('')}</div>
-        <button class="know-more" id="${id}">Saiba Mais</button>
+        <button onclick="teste()" class="know-more" id="${id}">Minhas Playlists</button>
+
         `
         overlayContent.innerHTML = content;
       }

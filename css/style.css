@@ -249,6 +249,7 @@ main{
       top:50%;
       left:5%;
       transform: translateY(-50%);
+      opacity:0.1;
   }
 
   
@@ -256,6 +257,7 @@ main{
     top:50%;
     transform: translateY(-50%);
     right:5%;
+    opacity:0.1;
 }
 
 .dots{
@@ -274,4 +276,9 @@ main{
 
 .dots .dot.active{
     border-color: orange;
+}
+
+h4{
+    text-align: center;
+    color:#FFDA1F;
 }

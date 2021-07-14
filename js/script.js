@@ -179,7 +179,7 @@ function openNav(movie) {
         ${embed.join('')}
         <br/>
         <div class="dots">${dots.join('')}</div>
-        <button onclick="teste()" class="know-more" id="${id}">Minhas Playlists</button>
+        <button onclick="teste()" class="know-more" id="${id}">Adicionar filme na playlist</button>
 
         `
         overlayContent.innerHTML = content;
